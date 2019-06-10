@@ -134,3 +134,6 @@ a:hover{
 .cakes:hover img{
     filter: saturate(160%);
 }
+.display-6{
+    font-size: 25px;
+}
