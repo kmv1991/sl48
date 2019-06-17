@@ -198,15 +198,18 @@ a:hover{
     animation-direction: normal;
     animation-duration: 0.8s;
     animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
+    animation-timing-function: ease-in-out;
+    position: relative;
 }
 
 @keyframes cake-filling-des_show {
     from {
         opacity: 0;
+        transform: translateX(50px);
     }
 
     to {
         opacity: 1;
+        transform: translateX(0px);
     }
 }
