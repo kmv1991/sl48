@@ -226,3 +226,23 @@ a:hover{
     transform: scale(1.2);
     transition-duration: 0.5s;
 }
+
+.cake-single-img {
+    animation-name: cake-img-zoom;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+
+@keyframes cake-img-zoom {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
