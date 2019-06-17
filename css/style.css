@@ -187,3 +187,26 @@ a:hover{
 .del-from-cart:hover{
     color: #007bff;
 }
+
+.cake-filling-des {
+    display: none;
+}
+.cake-filling-des_show {
+    display: block;
+    animation-name: cake-filling-des_show;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes cake-filling-des_show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
