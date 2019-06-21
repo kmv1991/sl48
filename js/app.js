@@ -31,6 +31,20 @@ $(document).ready(function () {
 	});
 });
 
+$('#myModal').on('shown.bs.modal', function () {
+	$('#myInput').trigger('focus')
+})
 
+$('.change-value').on('click', function () {
+	let amountInput = $('.amount-of-kilos');
+	let amountValue = +amountInput.val();
+	let min = +amountInput.data('min');
 
+	let step = $(this).data('step');
 
+	if(amountValue + step < min) {
+		return;
+	}
+	amountInput.val(amountValue + step);
+
+})

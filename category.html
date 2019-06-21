@@ -68,7 +68,7 @@
 							<div class="">
 							<p>Ариткул: 213В</p>
 							<p>610 руб. за кг.</p>
-							<button class="btn btn-success">В корзину</button>
+							<button class="btn btn-success" data-toggle="modal" data-target="#quick-cart-modal">В корзину</button>
 							</div>
 							
 						</div>
@@ -215,6 +215,98 @@
 			</div>
 		</div>
 	</main>
+	<!-- modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="quick-cart-modal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Быстрый заказ</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row p-1">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0">
+							<strong>начинки на выбор:</strong>
+						</div>
+
+						<div class="col-2 p-1">
+							<label class="cake-filling-lbl">
+								<input class="cake-filling-radio" data-target="1" type="radio" name="test" value="n1" checked>
+								<img src="img/nachinka1.png" class="w-100" title="Слои белого бисквита пропитаны сиропом и соединены между собой поочередно сырным кремом с прослойкой из конфитюра черная смородина.">
+							</label>
+						</div>
+						<div class="col-2 p-1">
+							<label class="cake-filling-lbl">
+								<input class="cake-filling-radio" data-target="2" type="radio" name="test" value="n2">
+								<img src="img/nachinka2.jpg" class="w-100" title="Слои медового полуфабриката соединены между собой сливочным кремом с вареным сгущенным молоком.">
+							</label>
+						</div>
+						<div class="col-2 p-1">
+							<label class="cake-filling-lbl">
+								<input class="cake-filling-radio" data-target="3" type="radio" name="test" value="n3">
+								<img src="img/nachinka3.jpg" class="w-100">
+							</label>
+						</div>
+						<div class="col-2 p-1">
+							<label class="cake-filling-lbl">
+								<input class="cake-filling-radio" data-target="4" type="radio" name="test" value="n4">
+								<img src="img/nachinka4.jpg" class="w-100">
+							</label>
+						</div>
+						<div class="col-2 p-1">
+							<label class="cake-filling-lbl">
+								<input class="cake-filling-radio"data-target="5" type="radio" name="test" value="n5">
+								<img src="img/nachinka5.png" class="w-100">
+							</label>
+						</div>
+						<div class="col-2 p-1">
+							<label class="cake-filling-lbl">
+								<input class="cake-filling-radio" data-target="6" type="radio" name="test" value="n6">
+								<img src="img/nachinka6.jpg" class="w-100">
+							</label>
+						</div>
+
+					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0">
+						<strong>Описание начинки:</strong>
+
+						<p data-id="1" class="cake-filling-des cake-filling-des_show">
+							Слои белого бисквита пропитаны сиропом и соединены между собой поочередно сырным кремом с прослойкой из конфитюра черная смородина.
+						</p>
+						<p data-id="2" class="cake-filling-des">
+							Слои белого бисквита пропитаны сиропом и соединены между собой поочередно сырным кремом с прослойкой из конфитюра сладкая малина.
+						</p>
+						<p data-id="3" class="cake-filling-des">
+							Слои белого бисквита пропитаны сиропом и соединены между собой поочередно сырным кремом с прослойкой из конфитюра безумный банан.
+						</p>
+						<p data-id="4" class="cake-filling-des">
+							Слои белого бисквита пропитаны сиропом и соединены между собой поочередно сырным кремом с прослойкой из конфитюра отвязная дыня.
+						</p>
+						<p data-id="5" class="cake-filling-des">
+							Слои белого бисквита пропитаны сиропом и соединены между собой поочередно сырным кремом с прослойкой из конфитюра вишенка-черешенка.
+						</p>
+						<p data-id="6" class="cake-filling-des">
+							Слои белого бисквита пропитаны сиропом и соединены между собой поочередно сырным кремом с прослойкой из конфитюра.
+						</p>
+
+					</div>
+					<div class="amount-of-kilos-shell">
+						<button data-step="-1" class="change-value btn btn-primary"><i class="fas fa-minus fa-1x"></i></button>
+						<input data-min="2" type="text" type="number" class="form-control amount-of-kilos" value="2">
+						<button data-step="1" class="change-value btn btn-primary"><i class="fas fa-plus fa-1x"></i></button>
+						<small id="emailHelp" class="form-text text-muted">Кол-во кг.</small>
+					</div>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success">Заказать</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- modal -->
 	<footer style="background-color: #343a40;" class="pt-4">
 		<div class="container-fluid">
 			<div class="row">
