@@ -94,6 +94,7 @@ a:hover{
         display: block;
         visibility: visible;
     }
+    
 }
 /* LG */
 @media (min-width: 991px) {
@@ -127,6 +128,7 @@ a:hover{
         display: block;
         visibility: visible;
     }
+    
 }
 .cakes img{
     transition: 0.5s;
@@ -250,4 +252,12 @@ a:hover{
     display: inline-block;
     width: 45px;
     vertical-align: bottom;
+}
+.load-pic, .order-form{
+    padding: 0em 10em;
+}
+@media (max-width: 900px) {
+.load-pic, .order-form{
+        padding: 1em 1em;
+    }
 }
